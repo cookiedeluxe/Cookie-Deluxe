@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Deluxe 🍪</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff8ef;
+    color: #5a2638;
+  }
+
+  header {
+    background: #8b3a62;
+    color: #fff8ef;
+    text-align: center;
+    padding: 48px 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    font-size: 1.15rem;
+    margin: 10px 0 0;
+  }
+
+  nav {
+    background: #f7c6d9;
+    text-align: center;
+    padding: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  nav a {
+    display: inline-block;
+    color: #8b3a62;
+    text-decoration: none;
+    font-weight: bold;
+    background: #fff8ef;
+    padding: 10px 22px;
+    margin: 0 5px;
+    border-radius: 999px;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    background: #8b3a62;
+    color: #fff8ef;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 55px 20px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .cookies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .cookie {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(59,36,24,.12);
+  }
+
+  .cookie .emoji {
+    font-size: 2.6rem;
+  }
+
+  .cookie h3 {
+    margin: 12px 0 6px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .special {
+    background: #f7c6d9;
+    border-radius: 20px;
+    padding: 28px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    font-size: .9rem;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🍪 COOKIE DELUXE</h1>
+  <p>Big cookies. Big cravings.</p>
+</header>
+
+<nav>
+  <a href="index.html">Menu</a>
+  <a href="about.html">About</a>
+  <a href="order.html">Order</a>
+</nav>
+
+<section>
+
+  <h2>Our Cookie Flavors 🍪</h2>
+
+  <p class="tagline">
+    Fresh, delicious cookies made for your cravings.
+  </p>
+
+  <div class="cookies">
+
+    <div class="cookie">
+      <div class="emoji">🍪</div>
+      <h3>Classic Chocolate Chip</h3>
+      <p>Buttery cookie packed with chocolate chips.</p>
+      <div class="price">$1.00</div>
+    </div>
+
+    <div class="cookie">
+      <div class="emoji">🍫</div>
+      <h3>Double Chocolate</h3>
+      <p>Rich chocolate cookie with chocolate chips.</p>
+      <div class="price">$1.00</div>
+    </div>
+
+    <div class="cookie">
+      <div class="emoji">🤍</div>
+      <h3>Cookies &amp; Cream</h3>
+      <p>Creamy cookie dough with crushed sandwich cookies.</p>
+      <div class="price">$1.50</div>
+    </div>
+
+    <div class="cookie">
+      <div class="emoji">🍓</div>
+      <h3>Strawberry Cheesecake</h3>
+      <p>Sweet strawberry flavor with cheesecake-inspired goodness.</p>
+      <div class="price">$1.50</div>
+    </div>
+
+    <div class="cookie">
+      <div class="emoji">🍯</div>
+      <h3>Biscoff</h3>
+      <p>Caramelized cookie flavor with Biscoff pieces.</p>
+      <div class="price">$2.00</div>
+    </div>
+
+    <div class="cookie">
+      <div class="emoji">🔥</div>
+      <h3>S'mores</h3>
+      <p>Chocolate, marshmallow, and graham-cracker goodness.</p>
+      <div class="price">$2.00</div>
+    </div>
+
+  </div>
+
+  <div class="special">
+    <h3>⭐ Cookie of the Week ⭐</h3>
+    <p>A new special flavor every 2 weeks!</p>
+    <p>This week's flavor is Red Velvet with white chocolate chunks! ($2.00)</p>
+  </div>
+
+</section>
+
+<footer>
+  Cookie Deluxe 🍪
+</footer>
+
+</body>
+</html>
