@@ -67,13 +67,26 @@
     padding: 70px 20px;
   }
 
-  .order {
-    text-align: center;
-    background: #8b3a62;
-    color: #fff8ef;
-    border-radius: 24px;
-    padding: 45px 25px;
+ .order {
+  text-align: center;
+  background: #8b3a62;
+  color: #fff8ef;
+  border-radius: 24px;
+  padding: 45px 25px;
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
   .order h2 {
     font-size: 2rem;
@@ -85,29 +98,44 @@
   }
 
   .button {
-    display: inline-block;
-    margin-top: 15px;
-    background: #f7c6d9;
-    color: #8b3a62;
-    padding: 13px 24px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.2s;
+  display: inline-block;
+  margin-top: 15px;
+  background: #f7c6d9;
+  color: #8b3a62;
+  padding: 13px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  background: #fff8ef;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+
+ .info {
+  background: white;
+  color: #5a2638;
+  border-radius: 18px;
+  padding: 25px;
+  margin-top: 25px;
+  line-height: 1.6;
+  animation: slideIn 0.9s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
   }
 
-  .button:hover {
-    background: #fff8ef;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-
-  .info {
-    background: white;
-    color: #5a2638;
-    border-radius: 18px;
-    padding: 25px;
-    margin-top: 25px;
-    line-height: 1.6;
-  }
+}
 
   footer {
     text-align: center;
