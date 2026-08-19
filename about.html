@@ -72,18 +72,42 @@
     font-size: 2rem;
   }
 
-  .about-box {
-    background: white;
-    border-radius: 20px;
-    padding: 35px;
-    text-align: center;
-    box-shadow: 0 5px 18px rgba(59,36,24,.12);
-    line-height: 1.7;
+ .about-box {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(59,36,24,.12);
+  line-height: 1.7;
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
 
-  .emoji {
-    font-size: 3rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+  .emoji {
+  font-size: 3rem;
+  display: inline-block;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
 
   footer {
     text-align: center;
