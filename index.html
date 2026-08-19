@@ -85,16 +85,27 @@
   }
 
   .cookie {
-    background: white;
-    border-radius: 18px;
-    padding: 24px;
-    text-align: center;
-    box-shadow: 0 5px 18px rgba(59,36,24,.12);
-  }
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(59,36,24,.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cookie:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(59,36,24,.2);
+}
 
   .cookie .emoji {
-    font-size: 2.6rem;
-  }
+  font-size: 2.6rem;
+  transition: transform 0.25s ease;
+}
+
+.cookie:hover .emoji {
+  transform: scale(1.2) rotate(5deg);
+}
 
   .cookie h3 {
     margin: 12px 0 6px;
@@ -106,13 +117,18 @@
   }
 
   .special {
-    background: #f7c6d9;
-    border-radius: 20px;
-    padding: 28px;
-    text-align: center;
-    margin-top: 30px;
-  }
+  background: #f7c6d9;
+  border-radius: 20px;
+  padding: 28px;
+  text-align: center;
+  margin-top: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.special:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 30px rgba(139, 58, 98, 0.25);
+}
   footer {
     text-align: center;
     padding: 25px;
